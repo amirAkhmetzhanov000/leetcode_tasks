@@ -26,6 +26,14 @@ def transform_lists_into_linked(non_linked_list: list):
     return head
 
 
+def linked_to_list(head):
+    result = []
+    while head:
+        result.append(head.val)
+        head = head.next
+    return result
+
+
 def iterate_over_linked_list(linked_list):
     current = linked_list
     while current:
